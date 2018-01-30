@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-my-component',
+  selector: 'app-form-component',
   template: `
     <form [formGroup]="form">
       <input placeholder="Email" formControlName="email">
       <span *ngIf="form.hasError('required', ['email'])">
-        Email is required
+        Email Address is required
       </span>
     </form>
   `

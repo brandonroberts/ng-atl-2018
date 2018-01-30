@@ -6,29 +6,18 @@ import { MyFormComponent } from './my-form.component';
 import { createComponentFixture } from '../test-helpers';
 
 describe('MyFormComponent', () => {
-  let component: MyFormComponent;
-  let fixture: ComponentFixture<MyFormComponent>;
-
-  beforeEach(async() => {
-    await TestBed.configureTestingModule({
-      imports: [
-        NoopAnimationsModule,
-        ReactiveFormsModule,
-      ],
-      declarations: [
-        MyFormComponent
-      ]
-    })
-    .compileComponents();
+  const fixture = createComponentFixture({
+    component: MyFormComponent,
+    imports: [
+      ReactiveFormsModule
+    ]
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MyFormComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    fixture.compile();
   });
 
   it('should compile', () => {
-    expect(fixture).toBeDefined();
+    expect(fixture).toMatchSnapshot();
   });
 });

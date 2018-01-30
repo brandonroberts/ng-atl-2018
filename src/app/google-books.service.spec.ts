@@ -52,6 +52,12 @@ describe('GoogleBooksService', () => {
   });
 
   it('should return a list of books (marbles)', () => {
+    const response = cold('--a|', { a: books });
+    const expected = e('--b|', { b: books });
+    
+    httpClient.get.and.returnValue(response);
+    const output = getMessages(service.searchBooks('RxJS'));
 
+    expect(output).toEqual(expected);
   });
 });

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyFormComponent should compile 1`] = `
+<app-form-component
+  form={[Function FormGroup]}
+>
+  
+      <form
+    class="ng-untouched ng-pristine ng-invalid"
+    ng-reflect-form="[object Object]"
+    novalidate=""
+  >
+    
+        
+    <input
+      class="ng-untouched ng-pristine ng-invalid"
+      formcontrolname="email"
+      ng-reflect-name="email"
+      placeholder="Email"
+    />
+    
+        
+    
+    <span>
+      
+          Email Address is required
+        
+    </span>
+    
+      
+  </form>
+    
+</app-form-component>
+`;

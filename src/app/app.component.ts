@@ -22,7 +22,12 @@ import { Component } from '@angular/core';
         <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
       </li>
     </ul>
+<<<<<<< HEAD
   `
+=======
+  `,
+  styles: []
+>>>>>>> done
 })
 export class AppComponent {
   title = 'app';
