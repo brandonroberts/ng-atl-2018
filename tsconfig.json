@@ -11,6 +11,9 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "types": [
+      "jest"
+    ],
     "lib": [
       "es2017",
       "dom"

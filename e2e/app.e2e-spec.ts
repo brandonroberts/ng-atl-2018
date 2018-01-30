@@ -1,14 +1,9 @@
-import { AppPage } from './app.po';
+import * as appPage from './app';
 
 describe('ng-atl App', () => {
-  let page: AppPage;
+  it('should display welcome message', async() => {
+    await appPage.navigateTo();
 
-  beforeEach(() => {
-    page = new AppPage();
-  });
-
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(await appPage.getParagraphText().getText()).toEqual('Welcome to app!');
   });
 });

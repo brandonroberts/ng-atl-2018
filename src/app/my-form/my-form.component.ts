@@ -4,7 +4,7 @@ import { FormControl, Validators, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-my-component',
   template: `
-    <form [formGroup]="form" (ngSubmit)="submit()">
+    <form [formGroup]="form">
       <input placeholder="Email" formControlName="email">
       <span *ngIf="form.hasError('required', ['email'])">
         Email is required
