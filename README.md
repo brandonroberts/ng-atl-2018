@@ -1,6 +1,6 @@
 # Modern Testing Strategies for Reactive Applications
 
-This is the repo for the [ng-ATL](https://ng-atl.org) 2018 testing talk.
+This is the repo for the [ng-ATL](http://ng-atl.org) 2018 testing talk.
 
 ## Slides
 
